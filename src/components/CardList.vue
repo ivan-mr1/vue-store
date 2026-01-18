@@ -13,7 +13,7 @@ const onClickFavorite = () => {
 <template>
   <div class="grid grid-cols-4 gap-5">
     <Card
-      title="mens shoes Nice"
+      title="mens shoes Nike"
       :price="88"
       image-url="assets/img/sneakers/sneakers-1.jpg"
       :is-added="false"
