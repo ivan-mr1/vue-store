@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-between border-b border-slate-200 px-10 py-8">
     <div class="flex items-center gap-4">
-      <img src="/assets/img/logo.png" alt="Image" class="w-10" width="40" height="40" />
+      <img src="/assets/img/logo.png" alt="Logo" class="w-10" width="40" height="40" />
       <div>
         <h2 class="text-xl font-bold uppercase">shoes vue</h2>
         <p class="text-slate-500">Shop best shoes</p>

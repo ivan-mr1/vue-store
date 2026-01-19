@@ -1,7 +1,29 @@
 <script setup>
+import { onMounted, ref } from 'vue'
+import axios from 'axios'
 import Header from './components/Header.vue'
 import CardList from './components/CardList.vue'
+
 // import Drawer from './components/Drawer.vue'
+
+const items = ref([])
+
+// onMounted(() => {
+//   fetch('https://e01bc5e6df68d939.mokky.dev/items')
+//     .then((res) => res.json())
+//     .then((data) => {
+//       console.log(data)
+//     })
+// })
+
+onMounted(async () => {
+  try {
+    const { data } = await axios.get('https://e01bc5e6df68d939.mokky.dev/items')
+    items.value = data
+  } catch (e) {
+    console.log(e)
+  }
+})
 </script>
 
 <template>
@@ -27,12 +49,14 @@ import CardList from './components/CardList.vue'
               placeholder="Search..."
             />
             <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-              <img src="/assets/img/search.svg" />
+              <img src="/assets/img/search.svg" alt="search" width="16" height="16" />
             </div>
           </div>
         </div>
       </div>
-      <CardList />
+      <div class="mt-10">
+        <CardList :items="items" />
+      </div>
     </div>
   </div>
 </template>
