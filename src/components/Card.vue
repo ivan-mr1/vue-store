@@ -17,13 +17,13 @@ defineProps({
     <img
       @click="onClickFavorite"
       :src="!isFavorite ? '/assets/img/like-1.svg' : '/assets/img/like-2.svg'"
-      alt="Favorite"
+      alt="add to Favorite"
       class="absolute top-8 left-8"
       width="32"
       height="32"
       loading="lazy"
     />
-    <img :src="imageUrl" alt="sneaker" class="w-full" width="133" height="112" loading="lazy" />
+    <img :src="imageUrl" alt="product" class="w-full" width="133" height="112" loading="lazy" />
     <h3>{{ title }}</h3>
     <div class="flex justify-between">
       <div class="mt-5 flex flex-col">
@@ -33,7 +33,7 @@ defineProps({
       <img
         @click="onClickAdd"
         :src="!isAdded ? '/assets/img/plus.svg' : '/assets/img/checked.svg'"
-        alt="plus"
+        alt="add to cart"
         class=""
         width="32"
         height="32"
