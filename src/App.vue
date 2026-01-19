@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, reactive, watch } from 'vue'
 import axios from 'axios'
 import Header from './components/Header.vue'
 import CardList from './components/CardList.vue'
@@ -7,6 +7,36 @@ import CardList from './components/CardList.vue'
 // import Drawer from './components/Drawer.vue'
 
 const items = ref([])
+const filters = reactive({
+  sortBy: 'title',
+  searchQuery: '',
+})
+const onChangeSelect = (event) => {
+  filters.sortBy = event.target.value
+}
+
+const onChangeSearchInput = (event) => {
+  filters.searchQuery = event.target.value
+}
+
+const fetchItems = async () => {
+  try {
+    const params = {
+      sortBy: filters.sortBy,
+    }
+
+    if (filters.searchQuery) {
+      params.title = `*${filters.searchQuery}*`
+    }
+
+    const { data } = await axios.get('https://e01bc5e6df68d939.mokky.dev/items', {
+      params,
+    })
+    items.value = data
+  } catch (e) {
+    console.log(e)
+  }
+}
 
 // onMounted(() => {
 //   fetch('https://e01bc5e6df68d939.mokky.dev/items')
@@ -16,14 +46,9 @@ const items = ref([])
 //     })
 // })
 
-onMounted(async () => {
-  try {
-    const { data } = await axios.get('https://e01bc5e6df68d939.mokky.dev/items')
-    items.value = data
-  } catch (e) {
-    console.log(e)
-  }
-})
+onMounted(fetchItems)
+
+watch(filters, fetchItems)
 </script>
 
 <template>
@@ -36,14 +61,16 @@ onMounted(async () => {
 
         <div class="flex items-center gap-4">
           <select
+            @change="onChangeSelect"
             class="rounded-md border border-gray-200 px-3 py-2 focus:border-gray-400 focus:outline-none"
           >
             <option value="name">By name</option>
             <option value="price">By price (cheap)</option>
-            <option value="price">By price (expensive)</option>
+            <option value="-price">By price (expensive)</option>
           </select>
           <div class="relative">
             <input
+              @input="onChangeSearchInput"
               type="text"
               class="rounded-md border border-gray-200 py-2 pr-4 pl-10 focus:border-gray-400 focus:outline-none"
               placeholder="Search..."
