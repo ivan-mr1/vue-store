@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import axios from 'axios'
 import Header from './components/Header.vue'
 import CardList from './components/CardList.vue'
@@ -7,6 +7,12 @@ import CardList from './components/CardList.vue'
 // import Drawer from './components/Drawer.vue'
 
 const items = ref([])
+const sortBy = ref('')
+// const searchQuery = ref('')
+
+const onChangeSelect = (event) => {
+  sortBy.value = event.target.value
+}
 
 // onMounted(() => {
 //   fetch('https://e01bc5e6df68d939.mokky.dev/items')
@@ -24,6 +30,17 @@ onMounted(async () => {
     console.log(e)
   }
 })
+
+watch(sortBy, async () => {
+  try {
+    const { data } = await axios.get(
+      'https://e01bc5e6df68d939.mokky.dev/items?sortBy=' + sortBy.value,
+    )
+    items.value = data
+  } catch (e) {
+    console.log(e)
+  }
+})
 </script>
 
 <template>
@@ -36,11 +53,12 @@ onMounted(async () => {
 
         <div class="flex items-center gap-4">
           <select
+            @change="onChangeSelect"
             class="rounded-md border border-gray-200 px-3 py-2 focus:border-gray-400 focus:outline-none"
           >
             <option value="name">By name</option>
             <option value="price">By price (cheap)</option>
-            <option value="price">By price (expensive)</option>
+            <option value="-price">By price (expensive)</option>
           </select>
           <div class="relative">
             <input
