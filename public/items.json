@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Men Sneakers Nike Blazer Mid Suede",
+    "price": 129,
+    "imageUrl": "/assets/img/sneakers/sneakers-1.webp"
+  },
+  {
+    "id": 2,
+    "title": "Men Sneakers Nike Air Max 270",
+    "price": 156,
+    "imageUrl": "/assets/img/sneakers/sneakers-2.webp"
+  },
+  {
+    "id": 3,
+    "title": "Men Sneakers Nike Blazer Mid Suede",
+    "price": 84,
+    "imageUrl": "/assets/img/sneakers/sneakers-3.webp"
+  },
+  {
+    "id": 4,
+    "title": "Sneakers Puma X Aka Boku Future Rider",
+    "price": 70,
+    "imageUrl": "/assets/img/sneakers/sneakers-4.webp"
+  },
+  {
+    "id": 5,
+    "title": "Sneakers Future Rider",
+    "price": 95,
+    "imageUrl": "/assets/img/sneakers/sneakers-5.webp"
+  },
+  {
+    "id": 6,
+    "title": "Sneakers Black Edition",
+    "price": 169,
+    "imageUrl": "/assets/img/sneakers/sneakers-6.webp"
+  },
+  {
+    "id": 7,
+    "title": "Sneakers Orange Boomb Edition",
+    "price": 74,
+    "imageUrl": "/assets/img/sneakers/sneakers-7.webp"
+  },
+  {
+    "id": 8,
+    "title": "Sneakers Nike Air Max 270",
+    "price": 156,
+    "imageUrl": "/assets/img/sneakers/sneakers-8.webp"
+  },
+  {
+    "id": 9,
+    "title": "Sneakers Nike Air Force 1",
+    "price": 59,
+    "imageUrl": "/assets/img/sneakers/sneakers-9.webp"
+  },
+  {
+    "id": 10,
+    "title": "Sneakers Adidas Ultraboost",
+    "price": 115,
+    "imageUrl": "/assets/img/sneakers/sneakers-10.webp"
+  },
+  {
+    "id": 11,
+    "title": "Sneakers Puma Clyde All-Pro",
+    "price": 76,
+    "imageUrl": "/assets/img/sneakers/sneakers-11.webp"
+  },
+  {
+    "id": 12,
+    "title": "Sneakers Converse Chuck Taylor All-Star",
+    "price": 130,
+    "imageUrl": "/assets/img/sneakers/sneakers-12.webp"
+  }
+]
