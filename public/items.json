@@ -1,74 +1,104 @@
 [
   {
     "id": 1,
-    "title": "Men Sneakers Nike Blazer Mid Suede",
+    "title": "iPhone 17 Pro Max",
     "price": 129,
-    "imageUrl": "/assets/img/sneakers/sneakers-1.webp"
+    "imageUrl": "/assets/img/products/1.webp"
   },
   {
     "id": 2,
-    "title": "Men Sneakers Nike Air Max 270",
+    "title": "Samsung Galaxy S26 Ultra",
     "price": 156,
-    "imageUrl": "/assets/img/sneakers/sneakers-2.webp"
+    "imageUrl": "/assets/img/products/2.webp"
   },
   {
     "id": 3,
-    "title": "Men Sneakers Nike Blazer Mid Suede",
+    "title": "Google Pixel 10 Pro XL",
     "price": 84,
-    "imageUrl": "/assets/img/sneakers/sneakers-3.webp"
+    "imageUrl": "/assets/img/products/3.webp"
   },
   {
     "id": 4,
-    "title": "Sneakers Puma X Aka Boku Future Rider",
+    "title": "Xiaomi 16 Ultra",
     "price": 70,
-    "imageUrl": "/assets/img/sneakers/sneakers-4.webp"
+    "imageUrl": "/assets/img/products/4.webp"
   },
   {
     "id": 5,
-    "title": "Sneakers Future Rider",
+    "title": "OnePlus 15",
     "price": 95,
-    "imageUrl": "/assets/img/sneakers/sneakers-5.webp"
+    "imageUrl": "/assets/img/products/5.webp"
   },
   {
     "id": 6,
-    "title": "Sneakers Black Edition",
+    "title": "Oppo Find X9 Ultra",
     "price": 169,
-    "imageUrl": "/assets/img/sneakers/sneakers-6.webp"
+    "imageUrl": "/assets/img/products/6.webp"
   },
   {
     "id": 7,
-    "title": "Sneakers Orange Boomb Edition",
+    "title": "Samsung Galaxy Z Fold 7",
     "price": 74,
-    "imageUrl": "/assets/img/sneakers/sneakers-7.webp"
+    "imageUrl": "/assets/img/products/7.webp"
   },
   {
     "id": 8,
-    "title": "Sneakers Nike Air Max 270",
+    "title": "Honor Magic V4",
     "price": 156,
-    "imageUrl": "/assets/img/sneakers/sneakers-8.webp"
+    "imageUrl": "/assets/img/products/8.webp"
   },
   {
     "id": 9,
-    "title": "Sneakers Nike Air Force 1",
+    "title": "Motorola Razr Ultra (2025)",
     "price": 59,
-    "imageUrl": "/assets/img/sneakers/sneakers-9.webp"
+    "imageUrl": "/assets/img/products/9.webp"
   },
   {
     "id": 10,
-    "title": "Sneakers Adidas Ultraboost",
+    "title": "Google Pixel 10 Pro Fold",
     "price": 115,
-    "imageUrl": "/assets/img/sneakers/sneakers-10.webp"
+    "imageUrl": "/assets/img/products/10.webp"
   },
   {
     "id": 11,
-    "title": "Sneakers Puma Clyde All-Pro",
+    "title": "Nothing Phone (3)",
     "price": 76,
-    "imageUrl": "/assets/img/sneakers/sneakers-11.webp"
+    "imageUrl": "/assets/img/products/11.webp"
   },
   {
     "id": 12,
-    "title": "Sneakers Converse Chuck Taylor All-Star",
+    "title": "Samsung Galaxy A56",
     "price": 130,
-    "imageUrl": "/assets/img/sneakers/sneakers-12.webp"
+    "imageUrl": "/assets/img/products/12.webp"
+  },
+    {
+    "id": 13,
+    "title": "Realme 16 Pro+",
+    "price": 140,
+    "imageUrl": "/assets/img/products/13.webp"
+  },
+    {
+    "id": 14,
+    "title": "Google Pixel 9a",
+    "price": 150,
+    "imageUrl": "/assets/img/products/14.webp"
+  },
+    {
+    "id": 15,
+    "title": "ASUS ROG Phone 9 Pro",
+    "price": 170,
+    "imageUrl": "/assets/img/products/15.webp"
+  },
+    {
+    "id": 16,
+    "title": "Red Magic 11 Pro",
+    "price": 230,
+    "imageUrl": "/assets/img/products/16.webp"
+  },
+    {
+    "id": 17,
+    "title": "iPhone Air",
+    "price": 930,
+    "imageUrl": "/assets/img/products/17.webp"
   }
 ]
