@@ -3,8 +3,8 @@
     <div class="flex items-center gap-4">
       <img src="/assets/img/logo.png" alt="Logo" class="w-10" width="40" height="40" />
       <div>
-        <h2 class="text-xl font-bold uppercase">shoes vue</h2>
-        <p class="text-slate-500">Shop best shoes</p>
+        <h2 class="text-xl font-bold uppercase">phones vue</h2>
+        <p class="text-slate-500">Shop best phones</p>
       </div>
     </div>
 
