@@ -127,7 +127,13 @@ watch(filters, fetchItems)
     <h2 class="mb-8 text-3xl font-bold">All products</h2>
 
     <div class="flex gap-4">
-      <select @change="onChangeSelect" class="rounded-md border px-3 py-2 outline-none">
+      <label for="sort-select" class="sr-only">Sort products</label>
+      <select
+        id="sort-select"
+        name="sort"
+        @change="onChangeSelect"
+        class="rounded-md border px-3 py-2 outline-none"
+      >
         <option value="name">By name</option>
         <option value="price">By price (cheap)</option>
         <option value="-price">By price (expensive)</option>
