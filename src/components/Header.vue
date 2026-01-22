@@ -19,7 +19,7 @@ const emit = defineEmits(['openDrawer'])
       <li>
         <button
           @click="() => emit('openDrawer')"
-          class="flex items-center gap-2 text-blue-800 hover:text-black md:gap-3"
+          class="flex items-center gap-2 hover:text-blue-800 md:gap-3"
         >
           <img src="/assets/img/cart.svg" alt="cart" width="18" height="18" />
           <span class="text-sm font-bold md:text-base">{{ totalPrice }} $</span>
@@ -29,7 +29,7 @@ const emit = defineEmits(['openDrawer'])
       <li>
         <router-link
           to="/favorites"
-          class="flex items-center gap-2 text-sm text-blue-800 hover:text-black md:gap-3 md:text-base"
+          class="flex items-center gap-2 text-sm hover:text-blue-800 md:gap-3 md:text-base"
         >
           <img src="/assets/img/heart.svg" alt="favorites" width="18" height="18" />
           <span class="max-[450px]:hidden">Favorite</span>
