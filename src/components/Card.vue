@@ -13,7 +13,7 @@ defineProps({
 
 <template>
   <article
-    class="relative flex w-full cursor-pointer flex-col rounded-xl border border-slate-100 p-8 transition hover:-translate-y-2 hover:transform hover:shadow-xl"
+    class="relative flex w-full cursor-pointer flex-col rounded-xl border border-slate-200 p-8 transition hover:-translate-y-2 hover:transform hover:shadow-xl"
   >
     <img
       v-if="onClickFavorite"
@@ -29,7 +29,7 @@ defineProps({
     <h3 class="mt-2">{{ title }}</h3>
     <div class="flex justify-between">
       <div class="mt-5 flex flex-col">
-        <span class="text-slate-400">Price:</span>
+        <span class="text-slate-700">Price:</span>
         <span class="font-bold">{{ price }} $.</span>
       </div>
       <img
