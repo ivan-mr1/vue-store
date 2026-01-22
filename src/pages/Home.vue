@@ -123,23 +123,23 @@ watch(filters, fetchItems)
 </script>
 
 <template>
-  <div class="flex items-center justify-between">
+  <div class="flex items-center justify-between max-[650px]:flex-col">
     <h2 class="mb-8 text-3xl font-bold">All products</h2>
 
-    <div class="flex gap-4">
+    <div class="flex gap-4 max-[900px]:flex-col max-[900px]:items-stretch">
       <label for="sort-select" class="sr-only">Sort products</label>
       <select
         id="sort-select"
         name="sort"
         @change="onChangeSelect"
-        class="rounded-md border px-3 py-2 outline-none"
+        class="rounded-md border px-3 py-2 outline-none max-[900px]:order-2"
       >
         <option value="name">By name</option>
         <option value="price">By price (cheap)</option>
         <option value="-price">By price (expensive)</option>
       </select>
 
-      <div class="relative">
+      <div class="relative max-[900px]:order-1">
         <img
           class="absolute top-3 left-4"
           src="/assets/img/search.svg"
